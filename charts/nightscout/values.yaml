@@ -7,29 +7,15 @@ replicaCount: 1
 restartPolicy: Always
 
 image:
-  repository: nginx
+  repository: snic/nightscout
   tag: latest
   pullPolicy: IfNotPresent
 
 env:
   DEVICESTATUS_ADVANCED: "true"
   DISPLAY_UNITS: "mg/dl"
-  ENABLE: "bridge loop pump iob cob basal careportal sage cage cors"
   INSECURE_USE_HTTP: "true"
-  LANGUAGE: "de"
-  LOOP_ENABLE_ALERTS: "true"
-  LOOP_URGENT: "60"
-  LOOP_WARN: "20"
   PORT: "1337"
-  PUMP_ENABLE_ALERTS: "true"
-  PUMP_FIELDS: "battery reservoir clock status"
-  PUMP_RETRO_FIELDS: "battery reservoir clock status"
-  PUMP_URGENT_BATT_U: "30"
-  PUMP_URGENT_BATT_V: "1.25"
-  PUMP_URGENT_CLOCK: "30"
-  PUMP_URGENT_RES: "10"
-  SHOW_FORECAST: "loop"
-  SHOW_PLUGINS: "loop pump cob iob sage cage careportal"
   THEME: "color"
   TIME_FORMAT: "24"
 
