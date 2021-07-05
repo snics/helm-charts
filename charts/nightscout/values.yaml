@@ -8,7 +8,7 @@ restartPolicy: Always
 
 image:
   repository: snic/nightscout
-  tag: latest
+  tag: v14.2.2
   pullPolicy: IfNotPresent
 
 env:
